@@ -40,6 +40,11 @@ public class Utility extends ManageBrowser {
         driver.findElement(by).sendKeys(text);
     }
 
+
+    public String getAttributeValueFromElement(By by) {
+        return driver.findElement(by).getAttribute("value");
+    }
+
 //************************* Alert Methods *****************************************************
 
     /**
